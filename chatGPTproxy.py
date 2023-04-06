@@ -8,7 +8,7 @@ openai.api_key = openai_key_input
 def generate_text(prompt):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        max_tokens=60,
+        max_tokens=1500,
         n=1,
         stop=None,
         temperature=0.5,
